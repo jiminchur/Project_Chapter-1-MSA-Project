@@ -1,0 +1,21 @@
+# 요구사항에 맞춘 서버이름 : server
+spring:
+  application:
+    name: server
+# 요구사항에 맞춘 port : 19090
+server:
+  port: 19090
+
+# eureka main 서버 등록하기
+eureka:
+  client:
+    # eureka server 에 자신을 등록할지 설정
+    register-with-eureka: false
+    # eureka server 로부터 레지스트리를 가져올지 여부를 설정
+    fetch-registry: false
+    # eureka client 가 eureka server 와 통신하기 위해 사용할 기본 서비스 URL 을 설정
+    service-url:
+      defaultZone: http://localhost:19090/eureka/
+  # eureka server 인스턴스의 호스트 이름을 설정
+  instance:
+    hostname: localhost
