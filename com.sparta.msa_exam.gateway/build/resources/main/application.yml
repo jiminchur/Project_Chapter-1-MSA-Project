@@ -22,7 +22,7 @@ spring:
         locator:
           enabled: true
 
-# 서버 포트 19093으로 설정
+# 서버 포트 19091으로 설정
 server:
   port: 19091
 
